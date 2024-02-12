@@ -1,2 +1,2 @@
-- Bare tester litt
-- Tester enda mer for å se hvordan dette fungerer.
+- Bare tester litt. 
+Tester enda mer for å se hvordan dette fungerer.
