@@ -1,0 +1,287 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/services
+
+- Media:
+    - Sonarr:
+        icon: sonarr.png
+        href: http://192.168.10.10:8989
+        siteMonitor: http://192.168.10.10:8989
+        showStats: true
+        statusStyle: "dot" 
+        widget:
+          type: sonarr
+          url: http://192.168.10.10:8989
+          key: 93826142b9e846e0ad48e7ee59027000
+          showStats: true
+          
+    - Radarr:
+        icon: radarr.png
+        href: http://192.168.10.10:7878
+        siteMonitor: http://192.168.10.10:7878
+        showStats: true
+        statusStyle: "dot" 
+        widget:
+          type: radarr
+          url: http://192.168.10.10:7878
+          key: a1e52570bee14e189aa386095201f315
+          
+    - Deluge:
+        icon: deluge.png
+        href: http://192.168.10.10:8112
+        siteMonitor: http://192.168.10.10:8112
+        showStats: true
+        statusStyle: "dot" 
+        widget:
+          type: deluge
+          url: http://192.168.10.10:8112
+          password: deluge
+     
+            
+    - Photoprism:
+        icon: photoprism.png
+        href: http://192.168.10.10:2342
+        siteMonitor: http://192.168.10.10:2342
+        showStats: true
+        statusStyle: "dot" 
+        widget:
+            type: photoprism
+            url: http://192.168.10.10:2342
+            username: admin
+            password: E!dvo229
+                                   
+    - Bazarr:
+        icon: bazarr.png
+        href: http://192.168.10.10:6767
+        siteMonitor: http://192.168.10.10:6767
+        showStats: true
+        statusStyle: "dot" 
+        widget:
+          type: bazarr
+          url: http://192.168.10.10:6767
+          key: eef9524d2b5db9d661f21e9c27a83adc
+       
+    - Overseer:
+        icon: overseerr.png
+        href: http://192.168.10.10:5055 
+        siteMonitor: http://192.168.10.10:5055
+        showStats: true 
+        statusStyle: "dot"        
+        widget:
+            type: overseerr
+            url: http://192.168.10.10:5055
+            key: MTY5NTI1NTQxMjUwMjJkOGRmOGRmLWY2ZjYtNDFlMC1iZWU5LWU0NTBmM2M3NDcxMw==
+   
+    - Prowlarr:
+        icon: prowlarr.png
+        href: http://192.168.10.10:9696 
+        siteMonitor: http://192.168.10.10:9696
+        showStats: true
+        statusStyle: "dot" 
+        widget:
+            type: prowlarr
+            url: http://192.168.10.10:9696
+            key: 0241348534374868bdec9bb8230e131c
+         
+    - Jackett:
+        icon: jackett.png
+        href: http://192.168.10.10:9117   
+        siteMonitor: http://192.168.10.10:9117
+        showStats: true
+        statusStyle: "dot"         
+        widget:
+            type: jackett
+            url: http://192.168.10.10:9117
+            key: 26lebh39byhtk0kgypdco0unq98jm2hz
+   
+- Server & Services:
+
+    - unRAID:
+        icon: unraid.png
+        href: https://192.168.10.10
+        siteMonitor: https://192.168.10.10
+        showStats: true 
+        statusStyle: "dot" 
+                
+    - Uptime Robot:
+        icon: https://play-lh.googleusercontent.com/cUrv0t00FYQ1GKLuOTvv8qjo1lSDjqZC16IOp3Fb6ijew6Br5m4o16HhDp0GBu_Bw8Y=w240-h480-rw
+        href: https://uptimerobot.com/dashboard
+        description: external
+        widget:
+            type: uptimerobot
+            url: https://api.uptimerobot.com
+            key: u847412-6a3973016ff3453e347a9f33    
+        
+    - Pihole:
+        icon: pi-hole.svg
+        href: http://192.168.10.5
+        siteMonitor: https://192.168.10.5
+        showStats: true
+        widget:
+            type: pihole
+            url: http://192.168.10.5
+            key: "{{HOMEPAGE_VAR_PIHOLE_API_KEY}}" # optional
+            
+    - Proxmox:
+        icon: proxmox.svg
+        href: "{{HOMEPAGE_VAR_PROXMOX_URL}}"
+        description: 
+        siteMonitor: http://192.168.10.70
+        showStats: true
+        statusStyle: "dot" 
+        widget:
+            type: proxmox
+            url: 
+            username: "{{HOMEPAGE_VAR_PROXMOX_USER}}"
+            password: "{{HOMEPAGE_VAR_PROXMOX_API_KEY}}"
+            node: melhar 
+
+    - Plex:
+        icon: plex.png
+        href: http://192.168.10.10:32400/web/index.html#!/
+        siteMonitor: http://192.168.10.10:32400/web/index.html#!/
+        showStats: true
+        statusStyle: "dot" 
+        widget:
+            type: plex
+            url: http://192.168.10.10:32400
+            key: EbBB4JoqbVhXjRyoPV3y
+            
+    - JellyFin:
+        icon: jellyfin.png
+        href: http://192.168.10.10:8096
+        siteMonitor: http://192.168.10.10:8096
+        showStats: true
+        statusStyle: "dot" 
+        widget:
+            type: jellyfin
+            url: http://192.168.10.10:8096
+            key: 28d325fef89b4e46842a036b068dac9f
+            enableBlocks: true # optional, defaults to false
+            enableNowPlaying: true # optional, defaults to true  
+
+    - Portainer:
+        icon: portainer.png
+        href: http://192.168.10.10:19000
+        siteMonitor: http://192.168.10.10:19000
+        showStats: true
+        statusStyle: "dot" 
+        widget:
+            type: portainer
+            url: http://192.168.10.10:19000
+            env: 1
+            key: ptr_lktl3M1NFUdZMdaw+1nB2MXH2wMOe3uxvU9eq/v/ObQ= 
+    
+    - Nginx Proxy Manager:
+        icon: nginx-proxy-manager.png
+        href: http://192.168.10.50:81/
+        siteMonitor: http://192.168.10.50
+        showStats: true
+        statusStyle: "dot" 
+        widget:
+            type: npm
+            url: http://192.168.10.50:81/
+            
+         
+         
+- Utilities:
+  
+
+    - Syncthing:
+        icon: syncthing.png
+        href:  http://192.168.10.10:8384/
+        siteMonitor:  http://192.168.10.10:8384/
+        showStats: true
+        
+    - Krusader:
+        icon: krusader.png
+        href: http://192.168.10.10:6080/vnc.html?resize=remote&host=192.168.10.10&port=6080&autoconnect=1
+        siteMonitor: http://192.168.10.10:6080/vnc.html?resize=remote&host=192.168.10.10&port=6080&autoconnect=1
+        showStats: true
+        
+    - QDirStat:
+        icon: qdirstat.svg
+        href: http://192.168.10.10:7815/
+        siteMonitor: http://192.168.10.10:7815/
+        showStats: true 
+        
+    - TubeSync:
+        icon: tubesync.png
+        href: http://192.168.10.10:4848/
+        siteMonitor: http://192.168.10.10:4848/
+        showStats: true    
+        
+    - Todoist:
+        icon: todoist.png
+        href: https://app.todoist.com/app/today
+        siteMonitor: https://app.todoist.com/app/today
+        showStats: true    
+        
+    - Zenkit ToDo:
+        icon: zendesk.png
+        href: https://todo.zenkit.com/view/9AgARZSwYj
+        siteMonitor: https://todo.zenkit.com/view/9AgARZSwYj
+        key: ls2ojc2q-01ZYfcpUWj0PegUXvacMsMpSOlOD5c9Y
+        showStats: true     
+                  
+    - Raindrop:
+        icon: https://www.gitbook.com/cdn-cgi/image/width=36,dpr=2,height=36,fit=contain,format=auto/https%3A%2F%2F3611960587-files.gitbook.io%2F~%2Ffiles%2Fv0%2Fb%2Fgitbook-legacy-files%2Fo%2Fspaces%252F-M-GPP1TyNN8gNuijaj7%252Favatar-1594897823595.png%3Fgeneration%3D1594897823939302%26alt%3Dmedia
+        href: https://app.raindrop.io/my/20166447
+        siteMonitor: https://app.raindrop.io/my/20166447
+        showStats: true       
+       
+    - Værmelding:
+        icon: https://theme.zdassets.com/theme_assets/657817/e0d45b107843994315d5fc26402c4f9dc3686458.png
+        href: https://www.yr.no/nb/innhold/1-2300489/table.html?mode=dark
+        siteMonitor: https://www.yr.no/nb/innhold/1-2300489/table.html?mode=dark
+        showStats: true 
+       
+    - GitHub:
+        icon: github.png
+        href: https://github.com/melhar/melhar.git
+        siteMonitor: https://github.com/melhar/melhar.git
+        showStats: true   
+
+    - Wireguard:
+        icon: wireguard.png
+        href: http://192.168.10.10:51821/ 
+        siteMonitor: http://192.168.10.10:51821/ 
+        showStats: true          
+  
+- Kalender:
+  
+    - Kalender måned:
+        icon: google.svg
+        href: https://calendar.google.com/calendar/ical/hmeland%40gmail.com/private-1271207775ad8b987ccfad5b53f3a112/basic.ics
+        widget:
+            type: calendar
+            firstDayInWeek: monday # optional - defaults to monday
+            view: monthly # optional - possible values monthly, agenda
+            maxEvents: 10 # optional - defaults to 10
+            showTime: true # optional - show time for event happening today - defaults to false
+            timezone: Europe/Oslo # optional and only when timezone is not detected properly (slightly slower performance) - force timezone for ical events (if it's the same - no change, if missing or different in ical - will be converted to this timezone)
+            integrations: # optional
+              - type: ical # Show calendar events from another service
+                url: https://calendar.google.com/calendar/ical/hmeland%40gmail.com/private-1271207775ad8b987ccfad5b53f3a112/basic.ics
+                name: Harald # required - name for these calendar events
+                color: zinc # optional - defaults to pre-defined color for the service (zinc for ical)
+                params: # optional - additional params for the service
+                showName: true # optional - show name before event title in event line - defaults to false
+    
+    - Kalender agenda:
+        icon: google.svg
+        href: https://calendar.google.com/calendar/ical/hmeland%40gmail.com/private-1271207775ad8b987ccfad5b53f3a112/basic.ics
+        widget:
+            type: calendar
+            firstDayInWeek: monday # optional - defaults to monday
+            view: agenda # optional - possible values monthly, agenda
+            maxEvents: 10 # optional - defaults to 10
+            showTime: true # optional - show time for event happening today - defaults to false
+            timezone: Europe/Oslo # optional and only when timezone is not detected properly (slightly slower performance) - force timezone for ical events (if it's the same - no change, if missing or different in ical - will be converted to this timezone)
+            integrations: # optional
+              - type: ical # Show calendar events from another service
+                url: https://calendar.google.com/calendar/ical/hmeland%40gmail.com/private-1271207775ad8b987ccfad5b53f3a112/basic.ics
+                name: Harald # required - name for these calendar events
+                color: zinc # optional - defaults to pre-defined color for the service (zinc for ical)
+                params: # optional - additional params for the service
+                showName: true # optional - show name before event title in event line - defaults to false

@@ -1,0 +1,17 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/settings
+
+providers:
+    openweathermap: openweathermapapikey
+    weatherapi: c754928f48a3c47ab4c1deeac32e86da 
+    longhorn:
+        url: https://longhorn.example.com
+        username: admin
+        password: LonghornPassword  
+
+title: Harald sin hjemmeside
+
+layout:
+
+ 
