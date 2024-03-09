@@ -102,39 +102,54 @@
         siteMonitor: https://192.168.10.10
         showStats: true 
         statusStyle: "dot" 
-                
-    - Uptime Robot:
-        icon: https://play-lh.googleusercontent.com/cUrv0t00FYQ1GKLuOTvv8qjo1lSDjqZC16IOp3Fb6ijew6Br5m4o16HhDp0GBu_Bw8Y=w240-h480-rw
-        href: https://uptimerobot.com/dashboard
-        description: external
+        
+    - OpnSense:
+        icon: opnsense.svg
+        description: 
+        href: https://192.168.10.4
+        siteMonitor: https://192.168.10.4
+        showStats: true
+        statusStyle: "dot"       
         widget:
-            type: uptimerobot
-            url: https://api.uptimerobot.com
-            key: u847412-6a3973016ff3453e347a9f33    
+            type: opnsense
+            url: https://192.168.10.4
+            username: 87i+tCglSIyUKQvPf7N84RAhn+vRY2EYyZxCvusoXoTKWAdr+HN+jIStaswlx9W7VxD8yuhNdIYmu8vS
+            password: W/2btZrEIfY0pXLl1Kh5yoAe+I/SfDy4CB16HgmxsxxqGqz8sSYkF9Y2ThWipWo/pHx4yW9COR6F7TMY
+    
+    - Adguard Home:
+        icon: adguard-home.png
+        href: http://192.168.10.4:3000
+        siteMonitor: https://192.168.10.4
+        showStats: true
+        widget:
+            type: adguard
+            url: http://192.168.10.4:3000
+            username: root
+            password: E!dvo229
         
     - Pihole:
         icon: pi-hole.svg
         href: http://192.168.10.5
-        siteMonitor: https://192.168.10.5
+        siteMonitor: http://192.168.10.5
         showStats: true
         widget:
             type: pihole
-            url: http://192.168.10.5
-            key: "{{HOMEPAGE_VAR_PIHOLE_API_KEY}}" # optional
+            url: http://192.168.10.5:80
+            key: 06160a72f20a6f698094be8fd3f52f10f8328efcf7432234ee5aa75f6a37bb30
             
     - Proxmox:
         icon: proxmox.svg
-        href: "{{HOMEPAGE_VAR_PROXMOX_URL}}"
         description: 
-        siteMonitor: http://192.168.10.70
+        href: https://192.168.10.11:8006
+        siteMonitor: https://192.168.10.11:8006
         showStats: true
         statusStyle: "dot" 
         widget:
-            type: proxmox
-            url: 
-            username: "{{HOMEPAGE_VAR_PROXMOX_USER}}"
-            password: "{{HOMEPAGE_VAR_PROXMOX_API_KEY}}"
-            node: melhar 
+            type: proxmox 
+            url: https://192.168.10.11:8006
+            username: root@pam!root
+            password: ae444f98-43e8-4888-baee-358911b354ec
+        
 
     - Plex:
         icon: plex.png
@@ -171,6 +186,17 @@
             url: http://192.168.10.10:19000
             env: 1
             key: ptr_lktl3M1NFUdZMdaw+1nB2MXH2wMOe3uxvU9eq/v/ObQ= 
+            
+    - Uptime Robot:
+        icon: https://play-lh.googleusercontent.com/cUrv0t00FYQ1GKLuOTvv8qjo1lSDjqZC16IOp3Fb6ijew6Br5m4o16HhDp0GBu_Bw8Y=w240-h480-rw
+        href: https://uptimerobot.com/dashboard
+        siteMonitor: https://uptimerobot.com/dashboard
+        showStats: true
+        description: external
+        widget:
+            type: uptimerobot
+            url: https://api.uptimerobot.com
+            key: u847412-6a3973016ff3453e347a9f33 
     
     - Nginx Proxy Manager:
         icon: nginx-proxy-manager.png
@@ -182,7 +208,45 @@
             type: npm
             url: http://192.168.10.50:81/
             
-         
+- Kalender:
+  
+    - Kalender måned:
+        icon: google.svg
+        href: https://calendar.google.com/calendar/ical/hmeland%40gmail.com/private-1271207775ad8b987ccfad5b53f3a112/basic.ics
+        widget:
+            type: calendar
+            firstDayInWeek: monday # optional - defaults to monday
+            view: monthly # optional - possible values monthly, agenda
+            maxEvents: 10 # optional - defaults to 10
+            showTime: true # optional - show time for event happening today - defaults to false
+            timezone: Europe/Oslo # optional and only when timezone is not detected properly (slightly slower performance) - force timezone for ical events (if it's the same - no change, if missing or different in ical - will be converted to this timezone)
+            integrations: # optional
+              - type: ical # Show calendar events from another service
+                url: https://calendar.google.com/calendar/ical/hmeland%40gmail.com/private-1271207775ad8b987ccfad5b53f3a112/basic.ics
+                name: Harald # required - name for these calendar events
+                color: zinc # optional - defaults to pre-defined color for the service (zinc for ical)
+                params: # optional - additional params for the service
+                showName: true # optional - show name before event title in event line - defaults to false
+    
+    - Kalender agenda:
+        icon: google.svg
+        href: https://calendar.google.com/calendar/ical/hmeland%40gmail.com/private-1271207775ad8b987ccfad5b53f3a112/basic.ics
+        widget:
+            type: calendar
+            firstDayInWeek: monday # optional - defaults to monday
+            view: agenda # optional - possible values monthly, agenda
+            maxEvents: 10 # optional - defaults to 10
+            showTime: true # optional - show time for event happening today - defaults to false
+            timezone: Europe/Oslo # optional and only when timezone is not detected properly (slightly slower performance) - force timezone for ical events (if it's the same - no change, if missing or different in ical - will be converted to this timezone)
+            integrations: # optional
+              - type: ical # Show calendar events from another service
+                url: https://calendar.google.com/calendar/ical/hmeland%40gmail.com/private-1271207775ad8b987ccfad5b53f3a112/basic.ics
+                name: Harald # required - name for these calendar events
+                color: zinc # optional - defaults to pre-defined color for the service (zinc for ical)
+                params: # optional - additional params for the service
+                showName: true # optional - show name before event title in event line - defaults to false  
+
+  
          
 - Utilities:
   
@@ -211,6 +275,12 @@
         siteMonitor: http://192.168.10.10:4848/
         showStats: true    
         
+    - Ticktick:
+        icon: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fplay-lh.googleusercontent.com%2FYSlqf3WBgIuNjwOoABhCM6ehJFJ0p5aTe5TAc3gq80SMBdg-8mqwcOUwFgFu4uVU2gQ&f=1&nofb=1&ipt=36ede691b7e235358cac50d0eab5722e0597b5fc8a71152b4cdf19c3e25e7888&ipo=images
+        href: https://ticktick.com/webapp/#q/all/tasks   
+        siteMonitor: https://ticktick.com/webapp/#q/all/tasks   
+        showStats: true    
+    
     - Todoist:
         icon: todoist.png
         href: https://app.todoist.com/app/today
@@ -248,40 +318,3 @@
         siteMonitor: http://192.168.10.10:51821/ 
         showStats: true          
   
-- Kalender:
-  
-    - Kalender måned:
-        icon: google.svg
-        href: https://calendar.google.com/calendar/ical/hmeland%40gmail.com/private-1271207775ad8b987ccfad5b53f3a112/basic.ics
-        widget:
-            type: calendar
-            firstDayInWeek: monday # optional - defaults to monday
-            view: monthly # optional - possible values monthly, agenda
-            maxEvents: 10 # optional - defaults to 10
-            showTime: true # optional - show time for event happening today - defaults to false
-            timezone: Europe/Oslo # optional and only when timezone is not detected properly (slightly slower performance) - force timezone for ical events (if it's the same - no change, if missing or different in ical - will be converted to this timezone)
-            integrations: # optional
-              - type: ical # Show calendar events from another service
-                url: https://calendar.google.com/calendar/ical/hmeland%40gmail.com/private-1271207775ad8b987ccfad5b53f3a112/basic.ics
-                name: Harald # required - name for these calendar events
-                color: zinc # optional - defaults to pre-defined color for the service (zinc for ical)
-                params: # optional - additional params for the service
-                showName: true # optional - show name before event title in event line - defaults to false
-    
-    - Kalender agenda:
-        icon: google.svg
-        href: https://calendar.google.com/calendar/ical/hmeland%40gmail.com/private-1271207775ad8b987ccfad5b53f3a112/basic.ics
-        widget:
-            type: calendar
-            firstDayInWeek: monday # optional - defaults to monday
-            view: agenda # optional - possible values monthly, agenda
-            maxEvents: 10 # optional - defaults to 10
-            showTime: true # optional - show time for event happening today - defaults to false
-            timezone: Europe/Oslo # optional and only when timezone is not detected properly (slightly slower performance) - force timezone for ical events (if it's the same - no change, if missing or different in ical - will be converted to this timezone)
-            integrations: # optional
-              - type: ical # Show calendar events from another service
-                url: https://calendar.google.com/calendar/ical/hmeland%40gmail.com/private-1271207775ad8b987ccfad5b53f3a112/basic.ics
-                name: Harald # required - name for these calendar events
-                color: zinc # optional - defaults to pre-defined color for the service (zinc for ical)
-                params: # optional - additional params for the service
-                showName: true # optional - show name before event title in event line - defaults to false
