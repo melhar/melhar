@@ -1,0 +1,35 @@
+! ------------------------------------[UPDATE]--------------------------------------
+! Title: Harald sin blocklist (adguard)
+! Expires: 1 day
+! -------------------------------------[INFO]---------------------------------------
+!
+! Default blocklist
+! ------------------------------------[FILTERS]-------------------------------------
+||acr0.samsungcloudsolution.com^
+||ad.lgappstv.com^
+! ------------------------------------[MICROSOFT]-------------------------------------
+||data.microsoft.com^$important
+||msftconnecttest.com^$important
+||azureedge.net^$important
+||activity.windows.com^$important
+||bingapis.com^$important
+||msedge.net^$important
+||assets.msn.com^$important
+||data.msn.com^$important
+||self.events.data.microsoft.com^$important
+||graph.microsoft.com^$important
+||settings.data.microsoft.com^$important
+||edge.microsoft.com^$important
+||www.bing.com^$important
+||c0.wp.com^$important
+||nav-edge.smartscreen.microsoft.com^$important
+||config.edge.skype.com^$important
+||gateway.bingviz.microsoftapp.net^$important
+! ------------------------------------[GOOGLE]-------------------------------------
+||lh7-us.googleusercontent.com^$important
+||geller-pa.googleapis.com^$important
+||www.gstatic.com^$important
+! ------------------------------------[DIVERSE]-------------------------------------
+||static.finncdn.no^$important
+||live-timeline-addon.schibsted.tech^$important
+||scorecardresearch.com^$important
