@@ -33,7 +33,7 @@
 ||lh7-us.googleusercontent.com^$important
 ||geller-pa.googleapis.com^$important
 ||www.gstatic.com^$important
-||www.gstatic.com^$important
+||www.vg.no^$important
 ! ------------------------------------[DIVERSE]-------------------------------------
 ||static.finncdn.no^$important
 ||live-timeline-addon.schibsted.tech^$important
