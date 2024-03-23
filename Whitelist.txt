@@ -18,5 +18,6 @@
 @@||disqus.com^
 @@||aid.no^
 @@||linkedin.com^
+@@||steigan.no^
 !
 !
