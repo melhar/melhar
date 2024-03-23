@@ -1,0 +1,22 @@
+! ------------------------------------[UPDATE]--------------------------------------
+! Title: Harald sin allowlist (adguard)
+! Expires: 1 day
+! ------------------------------------[SYNTAX for AdGuard]-------------------------------------
+!    ||example.org^:block access to example.org and all its subdomains;
+!   @@||example.org^:unblock access to example.org and all its subdomains;
+!    127.0.0.1 example.org:respond with 127.0.0.1 for example.org (but not for its subdomains);
+!    ! Here goes a comment.:just a comment;
+!    # Also a comment.:just a comment;
+!    /REGEX/:block access to domains matching the specified regular expression.
+!
+! -------------------------------------[WHITELIST!]---------------------------------------
+! Min egen WHITELIST
+@@||document.no^
+@@||inyheter.no^
+@@||maeland.top^
+@@||melhar.duckdns.org^
+@@||disqus.com^
+@@||aid.no^
+@@||linkedin.com^
+!
+!
