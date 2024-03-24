@@ -21,6 +21,5 @@
 @@||aid.no^
 @@||linkedin.com^
 @@||steigan.no^
-@@||vg.no^
 !
 !
