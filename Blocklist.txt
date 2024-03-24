@@ -1,6 +1,7 @@
 ! ------------------------------------[UPDATE]--------------------------------------
 ! Title: Harald sin blocklist (adguard)
 ! Expires: 1 day
+Updated: 2024-03-24
 ! ------------------------------------[SYNTAX for AdGuard]-------------------------------------
 !    ||example.org^:block access to example.org and all its subdomains;
 !   @@||example.org^:unblock access to example.org and all its subdomains;
