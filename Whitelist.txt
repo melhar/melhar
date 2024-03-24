@@ -21,5 +21,6 @@
 @@||aid.no^
 @@||linkedin.com^
 @@||steigan.no^
+@@||fonts.gstatic.com^$important
 !
 !
