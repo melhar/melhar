@@ -1,6 +1,7 @@
 ! ------------------------------------[UPDATE]--------------------------------------
 ! Title: Harald sin allowlist (adguard)
 ! Expires: 1 day
+! Updated: 
 ! ------------------------------------[SYNTAX for AdGuard]-------------------------------------
 !    ||example.org^:block access to example.org and all its subdomains;
 !   @@||example.org^:unblock access to example.org and all its subdomains;
@@ -11,6 +12,7 @@
 !
 ! -------------------------------------[WHITELIST!]---------------------------------------
 ! Min egen WHITELIST
+! -------------------------------------[WHITELIST!]---------------------------------------
 @@||document.no^
 @@||inyheter.no^
 @@||maeland.top^
