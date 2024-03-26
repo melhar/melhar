@@ -30,6 +30,7 @@ Updated: 2024-03-24
 ||nav-edge.smartscreen.microsoft.com^$important
 ||config.edge.skype.com^$important
 ||gateway.bingviz.microsoftapp.net^$important
+||msedge.b.tlu.dl.delivery.mp.microsoft.com
 ! ------------------------------------[GOOGLE]-------------------------------------
 ||lh7-us.googleusercontent.com^$important
 ||geller-pa.googleapis.com^$important
@@ -38,8 +39,15 @@ Updated: 2024-03-24
 ||www3.l.google.com
 ||appsgrowthpromo-pa.clients6.google.com
 ||peoplestackwebexperiments-pa.clients6.google.com
+||telephonyspamprotect-pa.googleapis.com
+||waa-pa.clients6.google.com
+||connectivitycheck.gstatic.com
 ! ------------------------------------[DIVERSE]-------------------------------------
 ||static.finncdn.no^$important
 ||live-timeline-addon.schibsted.tech^$important
 ||scorecardresearch.com^$important
 ||dualstack.o.sni.global.fastly.net
+||clientsdk.launchdarkly.com
+! ------------------------------------[FACEBOOK/SOSIALE MEDIER]-------------------------------------
+||edge-mqtt.facebook.com
+||star-mini.c10r.facebook.com
