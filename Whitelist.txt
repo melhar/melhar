@@ -22,5 +22,6 @@
 @@||linkedin.com^
 @@||steigan.no^
 @@||fonts.gstatic.com^$important
+@@||raw.githubusercontent.com^$important
 !
 !
